@@ -14,8 +14,8 @@ int[] ArrayGeneratorNumber(int count, int min, int max)
 int[] arrayList = ArrayGeneratorNumber(10, -100, 101);
 
 int countSumChetnihChisel = 0;
-for (int i = 0; i < arrayList.Length; i++)
-    if(i % 2 == 1) countSumChetnihChisel += arrayList[i];
+for (int i = 1; i < arrayList.Length; i += 2)
+    countSumChetnihChisel += arrayList[i];
         
 
 Console.Write("[");
